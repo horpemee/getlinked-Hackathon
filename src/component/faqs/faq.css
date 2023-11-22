@@ -1,0 +1,19 @@
+.css-o4b71y-MuiAccordionSummary-content {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  color: #d434fe;
+}
+
+#panel1a-header,
+#panel1a-content {
+  background-color: #150e28;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #d434fe;
+}
