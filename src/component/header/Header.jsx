@@ -3,6 +3,7 @@ import React from "react";
 import Menuicon from "./Vector.svg";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
+import "./header.css";
 
 const Header = () => {
   const register =
@@ -15,10 +16,13 @@ const Header = () => {
 
   return (
     <header className=" ">
-      <div className="px-10 py-6 border-b-[1px] border-customWhite bg-customBurger flex flex-row font-clash font-bold text-[15px] leading-[18.45px] items-center justify-between md:text-[36px] md:leading-[44.28px]   md:pt-10 md:pb-6 lg:px-28 lg:pt-10 lg:pb-6 ">
-        <h1 className="text-white ">
-          get<span className="text-primaryColor">linked</span>
-        </h1>
+      <div className="px-10 py-6 border-b-[1px] border-customWhite bg-customBurger flex flex-row font-clash font-bold text-[15px] leading-[18.45px] items-center justify-between md:text-[36px] md:leading-[44.28px]   md:pt-10 md:pb-6 lg:px-32 lg:pt-10 lg:pb-6 ">
+        <Link to="/">
+          <h1 className="text-white cursor ">
+            get<span className="text-primaryColor">linked</span>
+          </h1>
+        </Link>
+
         <img
           src={Menuicon}
           alt="menu icon"
@@ -30,19 +34,21 @@ const Header = () => {
           <div className="  ">
             {[
               ["Timeline", "/"],
-              ["Overview", "/overview"],
-              ["FAQs", "/faq"],
+              ["Overview", "#overview"],
+              ["FAQs", "#faq"],
               ["Contact", "/contact"],
             ].map(([links, path]) => (
-              <Link
-                to={path}
-                className="text-white  text-[16px] leading-[19.5px] md:mx-2 lg:mx-12  md:font-normal "
+              // eslint-disable-next-line jsx-a11y/anchor-is-valid
+              <a
+                key={links}
+                href={typeof path === "string" ? path : "#"}
+                className="text-white  text-[16px] leading-[19.5px] md:mx-2 lg:mx-12  md:font-normal register"
               >
                 {links}
-              </Link>
+              </a>
             ))}
             <button
-              className="text-[16px] py-3 font-normal rounded text-white  leading-[19.5px] font-mont md:ml-4 md:w-[132px]  lg:ml-24  "
+              className={`text-[16px] py-3 font-normal rounded text-white  leading-[19.5px] font-mont md:ml-4 md:w-[132px]  lg:ml-24 hover:bg-white hover:border-${register}`}
               style={{
                 background: register,
               }}

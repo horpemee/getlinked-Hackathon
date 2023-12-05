@@ -6,6 +6,7 @@ import sStar from "./images/star (1).svg";
 import Hacker from "./images/Hack.svg";
 import Creative from "./images/Creative 1.svg";
 import Chain from "./images/chain.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const register =
@@ -24,7 +25,7 @@ const Hero = () => {
           className="absolute right-0 top-[38px] md:w-[253px] md:right-20"
         />
 
-        <div className=" md:flex md:flex-row lg:pl-28  ">
+        <div className=" md:flex md:flex-row lg:pl-32  ">
           <div className="grid1 md:flex md:flex-col md:items-start md:text-left lg:w-1/2   ">
             <section className=" relative ">
               <div className="icons mt-2 relative">
@@ -77,14 +78,17 @@ const Hero = () => {
             </section>
 
             <div className="flex relative flex-row items-center justify-center lg:mb-12 ">
-              <button
-                className="text-[16px] py-4 w-[172px] rounded text-white  leading-[19.5px] font-mont font-normal items-center "
-                style={{
-                  background: register,
-                }}
-              >
-                Register
-              </button>
+              <Link to="/register">
+                <button
+                  className="text-[16px] py-4 w-[172px] rounded text-white  leading-[19.5px] font-mont font-normal items-center "
+                  style={{
+                    background: register,
+                  }}
+                >
+                  Register
+                </button>
+              </Link>
+
               <img src={sStar} alt="sStar" className="absolute right-[15%]" />
             </div>
 

@@ -48,87 +48,103 @@ const Article = (register) => {
     "linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)";
 
   return (
-    <div className=" bg-darkPurple flex flex-col items-center justify-center px-10 lg:px-28">
+    <div className=" bg-darkPurple flex flex-col items-center justify-center px-10 lg:px-32">
       {/* 1st segment  */}
-
       {/* medium screen and larger screens */}
-      <div className="md:grid md:grid-cols-2  ">
-        <div className="relative flex flex-col items-center justify-center">
-          <img src={Idea} alt="idea" className="lg:w-[490px] lg:h-[477px]" />
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:my-6 ">
+        <div className="md:grid md:grid-cols-2 ">
+          <div className="relative flex flex-col items-center justify-center">
+            <img src={Idea} alt="idea" className="lg:w-[490px] lg:h-[477px]" />
 
-          <img
-            src={curve}
-            alt="star"
-            className=" lg:w-[49.43px] lg:h-[57.97px]"
-          />
-          <img
-            src={Star}
-            alt="star"
-            className="absolute left-0 top-20 lg:w-[21px] lg:h-[25px]"
-          />
+            <img
+              src={curve}
+              alt="star"
+              className=" lg:w-[49.43px] lg:h-[57.97px]"
+            />
+            <img
+              src={Star}
+              alt="star"
+              className="absolute left-0 top-20 lg:w-[21px] lg:h-[25px]"
+            />
+          </div>
+
+          <aside className="text-center mb-12  relative md:text-left   lg:mb-0 lg:flex lg:flex-col  lg:justify-center  ">
+            <h1 className="my-4 font-clash font-bold text-[20px] leading-[26.6px] text-white flex flex-col items-center justify-center md:items-start lg:text-[32px] lg:leading-[42.56px] lg:items-start">
+              Introduction to getlinked
+              <span className="text-primaryColor">tech Hackathon 1.0</span>
+            </h1>
+            <img
+              src={sStar}
+              alt="star"
+              className="absolute right-2 top-8 lg:w-[30px] lg:h-[36px]"
+            />
+
+            <p className="font-mont mb-10 font-normal text-[13px] leading-[27.5px] text-white md:text-left  lg:text-[14px] lg:w-[80%]  ">
+              Our tech hackathon is a melting pot of visionaries, and its
+              purpose is as clear as day: to shape the future. Whether you're a
+              coding genius, a design maverick, or a concept wizard, you'll have
+              the chance to transform your ideas into reality. Solving
+              real-world problems, pushing the boundaries of technology, and
+              creating solutions that can change the world, that's what we're
+              all about!
+            </p>
+          </aside>
         </div>
-
-        <aside className="text-center mb-12  relative md:text-left lg:justify-center ">
-          <h1 className="my-4 font-clash font-bold text-[20px] leading-[26.6px] text-white flex flex-col items-center justify-center md:items-start lg:text-[32px] lg:leading-[42.56px]">
-            Introduction to getlinked
-            <span className="text-primaryColor">tech Hackathon 1.0</span>
-          </h1>
-          <img
-            src={sStar}
-            alt="star"
-            className="absolute right-2 top-8 lg:w-[30px] lg:h-[36px]"
-          />
-
-          <p className="font-mont mb-10 font-normal text-[13px] leading-[27.5px] text-white md:text-left">
-            Our tech hackathon is a melting pot of visionaries, and its purpose
-            is as clear as day: to shape the future. Whether you're a coding
-            genius, a design maverick, or a concept wizard, you'll have the
-            chance to transform your ideas into reality. Solving real-world
-            problems, pushing the boundaries of technology, and creating
-            solutions that can change the world, that's what we're all about!
-          </p>
-        </aside>
       </div>
-
       {/* hr */}
       <hr class="border-b-6  border-customWhite " style={{ width: "100vw" }} />
-
       {/* 2nd segment  */}
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-center lg:my-6 ">
+        <div className="md:grid md:grid-cols-2  ">
+          <div className="relative flex flex-col items-center justify-center md:order-last lg:items-start">
+            <img
+              src={Female}
+              alt="female"
+              className="lg:w-[664px] lg:h-[664px]"
+            />
 
-      <div className="md:grid md:grid-cols-2  ">
-        <div className="relative flex flex-col items-center justify-center md:order-last">
-          <img src={Female} alt="female" />
+            <img
+              src={whiteStar}
+              alt="star"
+              className="absolute left-0 top-44 lg:top-[70%] lg:w-[26px] lg:h-[32px]"
+            />
+          </div>
+          {/* <img src={star} alt="star" /> */}
 
-          <img src={whiteStar} alt="star" className="absolute left-0 top-44" />
+          <aside className="text-center relative lg:mb-0 lg:flex lg:flex-col  lg:justify-center ">
+            <h1 className="my-4 font-clash font-bold text-[20px] leading-[26.6px] text-white flex flex-col items-center justify-center md:items-start lg:text-[32px] lg:leading-[42.56px] ">
+              Rules and
+              <span className="text-primaryColor">Guidelines</span>
+            </h1>
+            <img
+              src={star}
+              alt="star"
+              className="absolute right-0 top-16 lg:left-[40%] lg:top-36 lg:w-[26px] lg:h-[32px]"
+            />
+
+            <p className="font-mont mb-10 font-normal text-[13px] leading-[27.5px] text-white md:text-left lg:text-[14px] lg:w-[80%] ">
+              Our tech hackathon is a melting pot of visionaries, and its
+              purpose is as clear as day: to shape the future. Whether you're a
+              coding genius, a design maverick, or a concept wizard, you'll have
+              the chance to transform your ideas into reality. Solving
+              real-world problems, pushing the boundaries of technology, and
+              creating solutions that can change the world, that's what we're
+              all about!
+            </p>
+            {/* <img src={whiteStar} alt="star" className=" my-4 lg:my-0 " /> */}
+          </aside>
         </div>
-        {/* <img src={star} alt="star" /> */}
-
-        <aside className="text-center relative ">
-          <h1 className="my-4 font-clash font-bold text-[20px] leading-[26.6px] text-white flex flex-col items-center justify-center md:items-start">
-            Rules and
-            <span className="text-primaryColor">Guidelines</span>
-          </h1>
-          <img src={star} alt="star" className="absolute right-0 top-16" />
-
-          <p className="font-mont mb-10 font-normal text-[13px] leading-[27.5px] text-white md:text-left">
-            Our tech hackathon is a melting pot of visionaries, and its purpose
-            is as clear as day: to shape the future. Whether you're a coding
-            genius, a design maverick, or a concept wizard, you'll have the
-            chance to transform your ideas into reality. Solving real-world
-            problems, pushing the boundaries of technology, and creating
-            solutions that can change the world, that's what we're all about!
-          </p>
-          <img src={whiteStar} alt="star" className=" my-4 " />
-        </aside>
       </div>
       <hr class="border-b-6  border-customWhite " style={{ width: "100vw" }} />
-
       {/* 3rd segment  */}
-
-      <div className="md:grid md:grid-cols-2  ">
-        <div className=" my-4 relative flex flex-col items-center justify-center">
+      <div className="md:grid md:grid-cols-2 lg:my-24 ">
+        <div className=" my-4 relative flex flex-col items-center lg:items-start justify-center">
           <img src={starpu} alt="star" className="  " />
-          <img src={Judge} alt="female" className="mt-10" />
+          <img
+            src={Judge}
+            alt="female"
+            className="mt-10 lg:mt-0 lg:w-[710px] lg:h-[587px]"
+          />
           <img
             src={star}
             alt="star"
@@ -136,14 +152,14 @@ const Article = (register) => {
           />
         </div>
         <aside className=" text-center  relative ">
-          <h1 className="my-4 font-clash font-bold text-[20px] leading-[26.6px] text-white flex flex-col items-center justify-center md:items-start">
+          <h1 className="my-4 font-clash font-bold text-[20px] leading-[26.6px] text-white flex flex-col items-center justify-center md:items-start lg:text-[32px] lg:leading-[42.56px] ">
             Judging Criteria
             <span className="text-primaryColor">Key attributes</span>
           </h1>
 
           {Attributes.map((attribute) => (
             <>
-              <p className="font-mont mb-6 font-bold text-[13px] leading-[22.56px] text-customPink md:text-left">
+              <p className="font-mont mb-6 font-bold text-[13px] leading-[22.56px] text-customPink md:text-left lg:w-[80%] lg:text-[16px] lg:leading-[27.26px]">
                 {attribute.title} : <span> </span>
                 <span className="text-white  font-normal text-[12px] leading-[20.82px] ">
                   {attribute.description}
@@ -154,9 +170,9 @@ const Article = (register) => {
 
           {/* <img src={sStar} alt="star" className="absolute right-0 top-8" /> */}
 
-          <div className=" mb-6 flex flex-row items-center justify-center relative  md:justify-start">
+          <div className=" mb-6 flex flex-row items-center justify-center relative  md:justify-start ">
             <button
-              className="text-[12px] mr-4 py-4  px-6 rounded text-white  leading-[14.63px] font-mont font-normal"
+              className="text-[12px] mr-4 py-4  px-6 rounded text-white  leading-[14.63px] font-mont font-normal lg:text-[16px] lg:leading-[19.5px] lg:mt-6 lg:py-4  lg:px-10 "
               style={{
                 background: readmore,
               }}

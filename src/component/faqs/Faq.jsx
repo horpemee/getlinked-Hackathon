@@ -13,17 +13,18 @@ import Questionmark from "./icon/_.png";
 import Smallmark from "./icon/_ (1).png";
 import Smamark from "./icon/_ (2).png";
 import "./faq.css";
+
 const Faq = () => {
   return (
-    <div className="md:grid md:grid-cols-2 bg-darkPurple   ">
+    <div className="md:grid md:grid-cols-2 bg-darkPurple lg:px-32  ">
       {/* <Link to="/faq"> */}
-      <div className="    px-10 text-center text-white py-14 font-mont font-normal text-[12px] ">
+      <div className="    px-10 text-center text-white py-14 font-mont font-normal text-[12px] lg:w-[70%] ">
         <img src={pStar} alt="pstar" />
-        <h1 className="font-clash font-bold text-[20px] leading-[26.6px]">
+        <h1 className="font-clash font-bold text-[20px] leading-[26.6px] lg:text-left lg:text-[32px] lg:leading-[42.56px] ">
           Frequently Ask
           <br /> <span className="text-primaryColor ">Question</span>
         </h1>
-        <h2 className="font-bold  mb-6   leading-[27.5px]">
+        <h2 className="font-bold  mb-6   leading-[27.5px] lg:text-left lg:text-[14px]">
           We got answers to the questions that you might want to ask about
           getlinked Hackathon 1.0
         </h2>
@@ -61,7 +62,11 @@ const Faq = () => {
         </span>
 
         <div>
-          <img src={QuestionAvatar} alt="question" className="" />
+          <img
+            src={QuestionAvatar}
+            alt="question"
+            className="lg:w-[741px] lg:h-[741px]"
+          />
         </div>
       </div>
       {/* </Link> */}

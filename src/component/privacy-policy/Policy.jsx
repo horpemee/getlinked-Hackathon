@@ -12,9 +12,9 @@ const Policy = () => {
     "linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)";
 
   return (
-    <div className="relative font-normal px-10 py-14 border-b-[1px] border-customWhite bg-customBurger flex text-[12px] flex-col font-mont text-center  text-white  items-center justify-center lg:pl-28 lg:pr-20 lg:text-left lg:py-20 ">
+    <div className="relative font-normal px-10 py-14 border-b-[1px] border-customWhite bg-customBurger flex text-[12px] flex-col font-mont text-center  text-white  items-center justify-center lg:px-32 lg:pr-20 lg:text-left  lg:py-20 lg:w-full ">
       <div className="md:grid md:grid-cols-2">
-        <div className="grid1">
+        <div className="grid1   lg:my-16  lg:px-16">
           <img src={sstar} alt="sstar" className="absolute top-8 right-28" />
           <h1 className="font-clash font-bold text-[20px] leading-[24.6px] lg:text-[32px] lg:leading-[39.36px] ">
             Privacy Policy and <br />{" "}
@@ -38,7 +38,7 @@ const Policy = () => {
             className="absolute top-[47%] left-2"
           />
 
-          <div className="mt-14 content-box py-14 px-4 border-primaryColor rounded-lg border-[1px] lg:text-[14px] lg:leading-[30.3px] lg:p-20 lg:w-2/3 lg:flex lg:flex-col  lg:items-center">
+          <div className="mt-14 content-box py-14 px-4 border-primaryColor rounded-lg border-[1px] lg:text-[14px] lg:leading-[30.3px] lg:p-20 lg:w-[80%] lg:flex lg:flex-col  lg:items-center">
             <p className="leading-[25.97px]">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
@@ -67,7 +67,7 @@ const Policy = () => {
             </span>
 
             <button
-              className="text-[12px] mr-4 py-3  px-4 rounded text-white  leading-[14.63px] font-mont font-normal lg:text-[16px] lg:leading-[19.5px]  "
+              className="text-[12px] mr-4 py-3  px-4 rounded text-white  leading-[14.63px] font-mont font-normal lg:text-[16px] lg:leading-[19.5px] lg:px-8 "
               style={{
                 background: readmore,
               }}
@@ -76,7 +76,7 @@ const Policy = () => {
             </button>
           </div>
         </div>
-        <div className=" my-16 relative flex flex-col items-center justify-center bg-secondaryColor">
+        <div className=" my-16 relative flex flex-col items-center justify-center   lg:justify-start  lg:mt-2">
           <img src={bdstar} alt="bdstar" className="absolute top-16 left-4" />
           <img src={swstar} alt="swstar" className="absolute top-24 right-24" />
           <img
@@ -89,12 +89,15 @@ const Policy = () => {
             alt="mwstar"
             className="absolute bottom-14 right-12"
           />
-
-          <img src={Backdrop} alt="backdrop" className="z-10 lg:w-[530px]" />
+          <img
+            src={Backdrop}
+            alt="backdrop"
+            className="z-10 lg:w-[530px] lg:h-[648px]  "
+          />
           <img
             src={Img}
             alt="img"
-            className=" mr-8 -mt-52  lg:w-[559px] lg:h-[749px]"
+            className=" mr-8 -mt-52  lg:w-[559px] lg:h-[749px] lg:absolute lg:top-[40%] lg:left-18 "
           />
         </div>
       </div>

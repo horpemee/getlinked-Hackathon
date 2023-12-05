@@ -90,62 +90,68 @@ const Form = () => {
   return (
     <form
       onSubmit={formSubmission}
-      className="  w-full flex   flex-col gap-2 mt-6"
+      className="  w-full flex   flex-col gap-2 mt-6 lg:text-start "
     >
-      <div className="name flex flex-col gap-3">
-        <label htmlFor="name">Team's Name</label>
-        <input
-          // ref={name}
-          type="text"
-          name="name"
-          placeholder="Enter the name of your group"
-          className="bg-input"
-          onChange={(event) => valueHandler("name", event.target.value)}
-          value={enteredValue.name}
-        />
-      </div>
+      <span className="lg:flex lg:flex-row  lg:gap-6">
+        <div className="name flex flex-col gap-3 lg:w-1/2">
+          <label htmlFor="name">Team's Name</label>
+          <input
+            // ref={name}
+            type="text"
+            name="name"
+            placeholder="Enter the name of your group"
+            className="bg-input"
+            onChange={(event) => valueHandler("name", event.target.value)}
+            value={enteredValue.name}
+          />
+        </div>
 
-      <img src={star} alt="star" className="absolute left-7 top-[50%]  " />
+        <img src={star} alt="star" className="absolute left-7 top-[50%]  " />
 
-      <div className="number flex flex-col gap-3">
-        <label htmlFor="phone">Phone</label>
-        <input
-          type="number"
-          // ref={phone}
-          name="phone"
-          placeholder="Enter your phone number"
-          className="bg-input"
-          onChange={(event) => valueHandler("phone", event.target.value)}
-          value={enteredValue.phone}
-        />
-      </div>
-      <div className="mail flex flex-col gap-3">
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          // ref={email}
-          placeholder="Enter your email address"
-          className="bg-input"
-          value={enteredValue.email}
-          onChange={(event) => valueHandler("email", event.target.value)}
-        />
-        <div>{validEmail && <p>Please enter a valid email</p>}</div>
-      </div>
-      <div className="topic flex flex-col gap-3">
-        <label htmlFor="topic">Project Topic</label>
-        <input
-          type="text"
-          name="topic"
-          // ref={topic}
-          placeholder="What is your group project topic"
-          className="bg-input"
-          value={enteredValue.topic}
-          onChange={(event) => valueHandler("topic", event.target.value)}
-        />
-      </div>
-      <div className="  flex flex-row  gap-4">
-        <section class="flex flex-col gap-2">
+        <div className="number flex flex-col gap-3 lg:w-1/2">
+          <label htmlFor="phone">Phone</label>
+          <input
+            type="number"
+            // ref={phone}
+            name="phone"
+            placeholder="Enter your phone number"
+            className="bg-input"
+            onChange={(event) => valueHandler("phone", event.target.value)}
+            value={enteredValue.phone}
+          />
+        </div>
+      </span>
+
+      <span className="lg:flex lg:flex-row  lg:gap-6">
+        <div className="mail flex flex-col gap-3 lg:w-1/2">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            // ref={email}
+            placeholder="Enter your email address"
+            className="bg-input"
+            value={enteredValue.email}
+            onChange={(event) => valueHandler("email", event.target.value)}
+          />
+          <div>{validEmail && <p>Please enter a valid email</p>}</div>
+        </div>
+        <div className="topic flex flex-col gap-3 lg:w-1/2">
+          <label htmlFor="topic">Project Topic</label>
+          <input
+            type="text"
+            name="topic"
+            // ref={topic}
+            placeholder="What is your group project topic"
+            className="bg-input"
+            value={enteredValue.topic}
+            onChange={(event) => valueHandler("topic", event.target.value)}
+          />
+        </div>
+      </span>
+
+      <div className="  flex flex-row  gap-4 lg:flex lg:flex-row  lg:gap-6">
+        <section class="flex flex-col gap-2 lg:w-1/2">
           <label htmlFor="category">Category</label>
 
           <select
@@ -158,7 +164,7 @@ const Form = () => {
           </select>
         </section>
 
-        <section class="flex flex-col gap-2">
+        <section class="flex flex-col gap-2 lg:w-1/2">
           <label htmlFor="groupSize">Group Size</label>
           <img src={sStar} alt="star" class="absolute right-12" />
 
@@ -172,13 +178,17 @@ const Form = () => {
           </select>
         </section>
       </div>
-      <p className="my-2 text-customPink italic text-[9px] leading-[10.97px]">
+
+      <p className="my-2 text-customPink italic text-[9px] leading-[10.97px] lg:text-[12px] lg:leading-[14.63px]">
         Please review your registration details before submitting
       </p>
 
-      <div className="flex flex-row items-start gap-4 justify-center">
+      <div className="flex flex-row items-start   gap-4 justify-center lg:justify-start ">
         <input type="checkbox" class="" name="privacy" />
-        <label htmlFor="privacy" className="text-[10px] leading-[12.19px] ">
+        <label
+          htmlFor="privacy"
+          className="text-[10px] leading-[12.19px] lg:text-[12px] lg:leading-[14.63px]  "
+        >
           I agreed with the event terms and conditions and privacy policy
         </label>
       </div>
@@ -186,7 +196,7 @@ const Form = () => {
       <button
         // onClick={formHandlerSubmission}
         // type="button"
-        className="w-1/2 flex text-center m-auto items-center justify-center text-[16px] px-14 py-4 rounded text-white  leading-[19.5px] font-mont font-normal"
+        className="w-1/2 lg:w-full flex text-center m-auto items-center justify-center text-[16px] px-14 py-4 rounded text-white  leading-[19.5px] font-mont font-normal"
         style={{
           background: submit,
         }}

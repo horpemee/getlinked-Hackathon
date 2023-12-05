@@ -9,7 +9,7 @@ import pstar from "./icon/sata gra (2).png";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-customBurger px-10 py-14  text-white font-mont text-[12px]   ">
+    <footer className="relative bg-footer px-10 py-14  text-white font-mont text-[12px]  lg:px-32 ">
       <div className="   border-customWhite flex flex-col  text-left md:grid md:grid-cols-3 md:gap-4 md:items-center md:justify-center">
         <div className="grid1">
           <img src={wstar} alt="wstar" className="absolute left-4 top-32" />
@@ -29,10 +29,10 @@ const Footer = () => {
             className="absolute bottom-24 left-[35%]"
           />
 
-          <h1 className="mb-4 text-white text-[20px] leading-[24.6px] font-clash font-bold">
+          <h1 className="mb-4 text-white text-[20px] leading-[24.6px] font-clash font-bold lg:text-[30px] lg:leading-[36.9px]">
             get<span className="text-primaryColor">linked</span>
           </h1>
-          <p className="font-normal  leading-[20.69px] text-white">
+          <p className="font-normal  leading-[20.69px] text-white lg:text-[12px] lg:leading-[20.69px]">
             Getlinked Tech Hackathon is a technology innovation program
             established by a group of organizations with the aim of showcasing
             young and talented individuals in the field of technology
@@ -45,15 +45,15 @@ const Footer = () => {
           </span>
         </div>
 
-        <div className="grid-2 md:flex md:flex-col md:items-center md:justify-center">
-          <div className=" gap-4  capitalize links leading-[20.69px] flex flex-col  ">
-            <h2 className="text-[14px] leading-[24.1px] text-primaryColor font-semibold ">
+        <div className="grid-2 md:flex md:flex-col md:items-center md:justify-center  md:mt-4">
+          <div className=" gap-4  capitalize links leading-[20.69px] flex flex-col   ">
+            <h2 className="text-[14px] leading-[24.1px] text-primaryColor font-semibold  ">
               useful links
             </h2>
             <a href="/">overview</a>
             <a href="/">timeline</a>
-            <a href="/">FAQ</a>
-            <a href="/">register </a>
+            <a href="#faq">FAQ</a>
+            <a href="/register">register </a>
 
             <div className="mb-12 md:mb-0">
               <Media />
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
 
         <div className="grid-3 md:flex md:flex-col md:items-center md:justify-center">
-          <h2 className="text-primaryColor font-semibold text-[14px] leading-[24.1px] capitalize mb-4   md:text-left">
+          <h2 className="text-primaryColor font-semibold text-[14px] leading-[24.14px] capitalize mb-4   md:text-left">
             contact us
           </h2>
           <span className="mb-6 leading-[14.63px] flex flex-row gap-4 ">

@@ -7,16 +7,20 @@ import Footer from "../../component/footer/Footer";
 import Prize from "../../component/prizes/Prize";
 import Timeline from "../../component/timeline/Timeline";
 import Faq from "../../component/faqs/Faq";
+// import { Link } from "react-router-dom";
 // import Contact from "../../component/contact/Contact";
 // import Register from "../../component/register/Register";
 
 const Home = () => {
   return (
-    <div className="wrapper relative">
+    <div className="wrapper relative overflow-hidden ">
       <Header />
       <Hero />
+
       <Article />
-      <Faq />
+      <div id="faq">
+        <Faq />
+      </div>
       <Timeline />
       <Prize />
       <Policy />

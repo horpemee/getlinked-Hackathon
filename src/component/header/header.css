@@ -1,0 +1,18 @@
+.register {
+  color: white; /* Set initial text color to white */
+  background-image: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* For Safari */
+  transition: background 0.3s ease; /* Add a transition for a smooth background change */
+}
+
+.register:hover {
+  background-image: transparent; /* Remove the background image on hover */
+  color: transparent; /* Set text color to transparent on hover */
+}

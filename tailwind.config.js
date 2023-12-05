@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     screens: {
-      sm: "480px",
+      sm: "320px",
       md: "768px",
       lg: "1024px",
     },
@@ -23,6 +23,8 @@ module.exports = {
       silver: "#D434FE1F",
       gold: "#903AFF1F",
       input: "#00000040",
+      footer: "#100B20",
+      form: "#FFFFFF08",
     },
 
     fontFamily: {

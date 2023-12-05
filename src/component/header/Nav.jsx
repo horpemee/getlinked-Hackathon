@@ -1,7 +1,7 @@
 import React from "react";
 import Close from "./Vector (1).svg";
 import { Link } from "react-router-dom";
-import Faq from "../faqs/Faq";
+// import Faq from "../faqs/Faq";
 const Nav = ({ toggleMenu }) => {
   // const iconGradient = "linear-gradient(180deg, #903AFF 0%, #FF26B9 100%)";
   const register =
