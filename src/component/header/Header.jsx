@@ -6,8 +6,20 @@ import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
+  const [hovered, setHovered] = useState(false);
   const register =
     "linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%)";
+
+  const buttonStyle = {
+    background: register,
+    border: "none",
+  };
+  const hoverStyles = {
+    background: "transparent",
+    borderColor: "#903AFF",
+    borderWidth: "4px",
+    borderStyle: "solid",
+  };
   const [menu, setMenu] = useState(false);
 
   const togglemenu = () => {
@@ -42,16 +54,18 @@ const Header = () => {
               <a
                 key={links}
                 href={typeof path === "string" ? path : "#"}
-                className="text-white  text-[16px] leading-[19.5px] md:mx-2 lg:mx-12  md:font-normal register"
+                className="text-white  text-[16px] leading-[19.5px] md:mx-2 lg:mx-12  md:font-normal link"
               >
                 {links}
               </a>
             ))}
             <button
-              className={`text-[16px] py-3 font-normal rounded text-white  leading-[19.5px] font-mont md:ml-4 md:w-[132px]  lg:ml-24 hover:bg-white hover:border-${register}`}
-              style={{
-                background: register,
-              }}
+              className={
+                " text-[16px] py-3 font-normal rounded text-white  leading-[19.5px] font-mont md:ml-4 md:w-[132px]  lg:ml-24  "
+              }
+              style={hovered ? hoverStyles : buttonStyle}
+              onMouseOver={() => setHovered(true)}
+              onMouseOut={() => setHovered(false)}
             >
               <a href="/register">Register</a>
             </button>
